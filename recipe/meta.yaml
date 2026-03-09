@@ -33,8 +33,6 @@ requirements:
     - ligo.skymap
     - pesummary
     - pycbc
-    - pyseobnr
-    - bibtexparser
     - pyyaml
     - numpy
     - pandas
