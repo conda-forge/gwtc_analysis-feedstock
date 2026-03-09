@@ -25,7 +25,7 @@ requirements:
     - wheel
   run:
     - python
-    - astropy
+    - astropy-base
     - gwosc
     - gwpy
     - h5py
