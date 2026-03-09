@@ -11,7 +11,7 @@ source:
 
 build:
   skip: true  # [win]
-  number: 0
+  number: 1
   entry_points:
     - gwtc_analysis = gwtc_analysis.cli:main
   script:
@@ -25,13 +25,23 @@ requirements:
     - wheel
   run:
     - python
+    - astropy
+    - gwosc
+    - gwpy
+    - h5py
+    - healpy
+    - ligo.skymap
+    - pesummary
+    - pycbc
+    - pyseobnr
+    - pyyaml
     - numpy
     - pandas
     - matplotlib-base
     - minio
     - requests
-    - healpy
-    - ligo.skymap
+    - scipy
+    - tqdm
 
 test:
   imports:
