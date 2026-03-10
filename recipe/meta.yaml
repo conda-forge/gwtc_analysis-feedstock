@@ -47,7 +47,7 @@ test:
     - gwtc_analysis
   commands:
     - gwtc_analysis --help
-    - pip check
+    - gwtc_analysis parameters_estimation -h
   requires:
     - pip
 
