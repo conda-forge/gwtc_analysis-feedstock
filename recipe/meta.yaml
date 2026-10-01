@@ -10,9 +10,8 @@ source:
   sha256: e66f9bc89f60e7190b2b7f3ced48b8a33024f11dded021e9ef918f92d1aef5cb
 
 build:
-  skip: true  # [win]
-  # pycbc, pyseobnr and ligo.skymap have no Python 3.14 builds yet
-  skip: true  # [py>=314]
+  # py>=314: pycbc, pyseobnr and ligo.skymap have no Python 3.14 builds yet
+  skip: true  # [win or py>=314]
   number: 0
   entry_points:
     - gwtc_analysis = gwtc_analysis.cli:main
