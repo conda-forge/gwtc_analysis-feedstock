@@ -36,13 +36,6 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>osx_64_python3.10.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=27617&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gwtc_analysis-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.10.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>osx_64_python3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=27617&branchName=main">
@@ -88,31 +81,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `gwtc_analysis` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install gwtc_analysis
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install gwtc_analysis
 ```
 
-It is possible to list all of the versions of `gwtc_analysis` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add gwtc_analysis
+# for installing globally
+pixi global install gwtc_analysis
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `gwtc_analysis` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search gwtc_analysis --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search gwtc_analysis --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search gwtc_analysis --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -124,6 +159,8 @@ mamba repoquery whoneeds gwtc_analysis --channel conda-forge
 # List dependencies of `gwtc_analysis`:
 mamba repoquery depends gwtc_analysis --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
