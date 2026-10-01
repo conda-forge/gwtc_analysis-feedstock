@@ -11,6 +11,8 @@ source:
 
 build:
   skip: true  # [win]
+  # pycbc, pyseobnr and ligo.skymap have no Python 3.14 builds yet
+  skip: true  # [py>=314]
   number: 0
   entry_points:
     - gwtc_analysis = gwtc_analysis.cli:main
