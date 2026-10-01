@@ -31,7 +31,7 @@ requirements:
     - h5py
     - healpy
     - ligo.skymap
-    - pesummary
+    - pesummary >=1.6
     - pycbc
     - pyseobnr
     - bibtexparser
@@ -40,6 +40,8 @@ requirements:
     - pandas
     - matplotlib-base
     - minio
+    # indirect (ligo.skymap -> reproject -> dask): without it the solver picks dask 2023.3, which fails with NumPy 2
+    - dask-core >=2024.8
     - requests
     - scipy
     - tqdm
