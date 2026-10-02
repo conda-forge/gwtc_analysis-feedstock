@@ -1,13 +1,13 @@
 {% set name = "gwtc_analysis" %}
-{% set version = "0.5.2" %}
+{% set version = "0.6.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/g/gwtc-analysis/gwtc_analysis-{{ version }}.tar.gz
-  sha256: eafbaa69d7207ada88a1bf4fd9b45034e724d08e2403b0f6a6532a1b724d87e8
+  url: https://files.pythonhosted.org/packages/source/g/gwtc-analysis/gwtc_analysis-{{ version }}.tar.gz
+  sha256: 177e38f8e5b3b64ef79e3f63b44e5d4e21e71ecbe31ea1402040745e98c70c74
 
 build:
   # py>=314: pycbc, pyseobnr and ligo.skymap have no Python 3.14 builds yet
