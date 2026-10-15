@@ -41,6 +41,16 @@ requirements:
     - pandas
     - matplotlib-base
     - minio
+    # 0.8.0: waveforms and strain (lal, lalsimulation), sky maps (astropy-healpix, reproject), PE files read over
+    # HTTP (fsspec + aiohttp), Bayesian fits (bilby with dynesty, emcee)
+    - lalsuite
+    - astropy-healpix
+    - reproject
+    - fsspec
+    - aiohttp
+    - bilby
+    - dynesty
+    - emcee
     # indirect (ligo.skymap -> reproject -> dask): without it the solver picks dask 2023.3, which fails with NumPy 2
     - dask-core >=2024.8
     - requests
@@ -53,6 +63,7 @@ test:
   commands:
     - gwtc_analysis --help
     - gwtc_analysis parameters_estimation -h
+    - gwtc_analysis hubble_constant -h
   requires:
     - pip
 
