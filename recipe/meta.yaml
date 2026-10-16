@@ -1,5 +1,5 @@
 {% set name = "gwtc_analysis" %}
-{% set version = "0.8.1" %}
+{% set version = "0.8.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/g/gwtc-analysis/gwtc_analysis-{{ version }}.tar.gz
-  sha256: 31c30b2697a9add5a35f328cf1adc950cd9c6f70fed63b0555c82429bb971af0
+  sha256: ead772c83d95cc79aad42ccd08396bde3981da6d7f582465b8976c03a1da05d5
 
 build:
   # py>=314: pycbc, pyseobnr and ligo.skymap have no Python 3.14 builds yet
